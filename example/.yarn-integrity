@@ -2,10 +2,12 @@
   "flags": [],
   "linkedModules": [],
   "topLevelPatters": [
-    "flatpickr@^3.0.6"
+    "flatpickr@^3.0.6",
+    "jquery@^3.2.1"
   ],
   "lockfileEntries": {
-    "flatpickr@^3.0.6": "http://registry.npm.taobao.org/flatpickr/download/flatpickr-3.0.6.tgz#81540f1a0f010fa3b96d929943b6396bbb25b1b6"
+    "flatpickr@^3.0.6": "http://registry.npm.taobao.org/flatpickr/download/flatpickr-3.0.6.tgz#81540f1a0f010fa3b96d929943b6396bbb25b1b6",
+    "jquery@^3.2.1": "http://registry.npm.taobao.org/jquery/download/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
   },
   "files": [],
   "artifacts": {}

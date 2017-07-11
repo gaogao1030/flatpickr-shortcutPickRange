@@ -1,6 +1,61 @@
 <html>
   <head>
+    <script src ="./jquery/dist/jquery.min.js" ></script>
+    <script src ="./flatpickr/dist/flatpickr.min.js" ></script>
+    <script src ="../shortcutPickRange/shortcutPickRange.js" ></script>
+    <link rel="stylesheet" media="all" href ="./flatpickr/dist/flatpickr.min.css" >
+    <link rel="stylesheet" media="all" href ="../shortcutPickRange/shortcutPickRange.css" >
+    <style>
+      input.flatpickr.input {padding: 10px; width: 100%;}
+      input.flatpickr.input.active {padding: 10px; width: 100%;}
+    </style>
+    <script>
+      $(document).ready(function(){
+        var today = new Date(new Date().setHours(0,0,0,0));
+        var add   = function(num){
+          _today = new Date(today);
+          result = _today.setDate(_today.getDate() + num);
+          return new Date(result);
+        };
+        var onChange = function(selectedDates,fp){
+          selected = selectedDates.map(
+            function(date){ return fp.formatDate(date,"Y-m-d") }
+          );
+          console.log(selected);
+        };
+        var $flatpickr  = $("#flatpickr");
+
+        var config = {
+        shortcut: [
+          { activate: false, text: "Last 24 Hours", range: [add(-1),  today] },
+          { activate: false, text: "Last 3 Days",   range: [add(-3),  today] },
+          { activate: false, text: "Last 7 Days",   range: [add(-7),  today] },
+          { activate: true,  text: "Last 30 Days",  range: [add(-30), today] }
+        ],
+        onChange: onChange
+        }
+
+        $flatpickr.flatpickr({
+          mode: "range",
+          altInput: true,
+          plugins: [new shortcutPickRangePlugin(config)],
+          defaultDate: ["2017-5-3", "2017-6-4"],
+        })
+      })
+    </script>
   </head>
-  <body>
+  <body style="background:#fff;">
+    <div class="block" style="
+          width: 300px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0;
+          right: 0;
+          height: 50px;
+   ">
+      <input class="flatpickr flatpickr-input active" id="flatpickr" style="padding:10px;"></div>
+    </div>
   </body>
 </html>

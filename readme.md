@@ -1,8 +1,8 @@
 # Flatpickr - ShortcutPickRange
 
-The Plugin for [flatpickr](https://github.com/chmln/flatpickr).
+The Plugin for [flatpickr](https://github.com/chmln/flatpickr)
 
-![Screenshot](ScreenShot-A.png)
+![Screenshot](ScreenShot.png)
 
 ## Usage
 
@@ -35,6 +35,6 @@ $flatpickr.flatpickr({
   mode: "range",
   altInput: true,
   plugins: [new shortcutPickRangePlugin(config)],
-  defaultDate: [dateFrom,dateTo],
+  defaultDate: ["2017-5-3", "2017-6-4"]
 })
 ```

@@ -15,7 +15,7 @@ body {
   width: 150px;
 }
 
-.flatpickr-calendar.open,
+.flatpickr-calendar.open.arrowBottom,
 .flatpickr-calendar.inline {
   margin-top: -10px;
 }
