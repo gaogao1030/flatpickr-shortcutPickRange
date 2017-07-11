@@ -4,10 +4,6 @@ The Plugin for [flatpickr](https://github.com/chmln/flatpickr).
 
 ![Screenshot](ScreenShot-A.png)
 
-## Install
-
-Copy shortcutPickRange directory to plugins directory.
-
 ## Usage
 
 ```javascript

@@ -1,0 +1,12 @@
+{
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatters": [
+    "flatpickr@^3.0.6"
+  ],
+  "lockfileEntries": {
+    "flatpickr@^3.0.6": "http://registry.npm.taobao.org/flatpickr/download/flatpickr-3.0.6.tgz#81540f1a0f010fa3b96d929943b6396bbb25b1b6"
+  },
+  "files": [],
+  "artifacts": {}
+}
