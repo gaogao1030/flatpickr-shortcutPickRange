@@ -2,11 +2,13 @@
 
 The Plugin for [flatpickr](https://github.com/chmln/flatpickr)
 
-![Screenshot](ScreenShot.png)
+![Screenshot](screenShot.png)
 
 ## Usage
 
 ```javascript
+var dateFrom = "2017-5-1"
+var dateTo = "2017-6-1"
 var today = new Date(new Date().setHours(0,0,0,0));
 var add   = function(num){
   _today = new Date(today);
@@ -35,6 +37,6 @@ $flatpickr.flatpickr({
   mode: "range",
   altInput: true,
   plugins: [new shortcutPickRangePlugin(config)],
-  defaultDate: ["2017-5-3", "2017-6-4"]
+  defaultDate: [dateFrom,dateTo],
 })
 ```
