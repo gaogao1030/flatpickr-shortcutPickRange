@@ -7,8 +7,8 @@ The Plugin for [flatpickr](https://github.com/chmln/flatpickr)
 ## Usage
 
 ```javascript
-var dateFrom = "2017-5-1"
-var dateTo = "2017-6-1"
+var dateFrom = "2017-05-01"
+var dateTo = "2017-06-01"
 var today = new Date(new Date().setHours(0,0,0,0));
 var add   = function(num){
   _today = new Date(today);
